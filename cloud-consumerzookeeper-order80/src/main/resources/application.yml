@@ -1,0 +1,8 @@
+server:
+  port: 80
+spring:
+  application:
+    name: cloud-consumer-order # 应用名称
+  cloud:
+    zookeeper:
+      connect-string: 10.253.104.251:2181 # Zookeeper的地址
