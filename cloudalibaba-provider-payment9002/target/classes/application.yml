@@ -1,0 +1,15 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: nacos-payment-provider
+  cloud:
+    nacos:
+      discovery:
+        #server-addr: localhost:8848 # 指明Nacos的地址
+        server-addr: 10.253.105.253:1111 # 指明Nacos的地址，注册到nacos 集群上。
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

@@ -1,0 +1,14 @@
+server:
+  port: 9004
+spring:
+  application:
+    name: nacos-payment-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.253.105.253:1111 #如果使用nacos集群，此地址为Nginx地址和映射端口号
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
